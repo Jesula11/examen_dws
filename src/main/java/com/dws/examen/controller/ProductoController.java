@@ -53,7 +53,7 @@ public class ProductoController {
         return ResponseEntity.ok(actualizado);
     }
     
-    // 5. DELETE - DELETE /api/producto/{codigoSku}
+    // DELETE - DELETE /api/producto/{codigoSku}
     @DeleteMapping("/codigoSku/{codigoSku}")
     public ResponseEntity<Void> eliminar(@PathVariable String codigoSkui) {
         productoService.eliminar();
